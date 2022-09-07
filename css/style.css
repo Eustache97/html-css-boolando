@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: 'Whitney', sans-serif;
+}
 img{
     width: 100%;
 }
@@ -21,7 +24,7 @@ img{
 /* HEADER */
 header{
     width: 100%;
-    background-color: orange;
+    background-color: orangered;
     color: white;
     position: fixed;
     text-align: center;
@@ -72,6 +75,7 @@ main .row{
 .card:hover .first-img{
     display: none;
 }
+/* heart */
 .card .love{
     position: absolute;
     right: 5%;
@@ -82,6 +86,9 @@ main .row{
 .love:hover{
     color: red;
 }
+/* /heart */
+
+/* ticket */
 .card .ticket{
     position: absolute;
     top: 90%;
@@ -97,6 +104,9 @@ main .row{
     display: inline-block;
     background-color: green;
 }
+/* /ticket */
+
+/* info-card */
 .info-card p.prix{
     color: red;
 }
@@ -107,7 +117,9 @@ main .row{
     color: grey;
     text-decoration:line-through;
 }
+/* /info-card */
 /* /MAIN */
+
 /* FOOTER */
 footer{
     display: flex;
