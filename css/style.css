@@ -11,7 +11,7 @@ img{
 
 /* COMMON */
 .container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -25,6 +25,8 @@ header{
     color: white;
     position: fixed;
     text-align: center;
+    position: fixed;
+    top: 0;
 }
 .logo{
     width: calc(100% / 3);
@@ -44,7 +46,53 @@ header{
     line-height: 30px;
 }
 /* /HEADER */
+
 /* MAIN */
+main .row{
+    gap: 10px;
+    margin-top: 3.5em;
+    flex-wrap: wrap;
+    /* debug */
+    background-color: blue;
+    /* /debug */
+}
+.col{
+    width: calc(100% / 3);
+    padding: .5em;
+    /* debug */
+    min-height: 400px;
+    background-color: aqua;
+    border: 1px solid black;
+    /* /debug */
+}
+.card{
+    margin-top: 1em;
+    /* debug */
+    height: 300px;
+    background-color: violet;
+    border: 1px solid black;
+    /* /debug */
+}
+.card .ticket{
+    position: relative;
+    top: 250px;
+}
+.ticket .discount{
+    display: inline-block;
+    background-color: red;
+    margin-right: .2em;
+}
+.ticket .quality{
+    display: inline-block;
+    background-color: green;
+}
+.info-card{
+    /* debug */
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+    /* /debug */
+}
 /* /MAIN */
 /* FOOTER */
 /* /FOOTER */
