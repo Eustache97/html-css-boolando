@@ -27,6 +27,7 @@ header{
     text-align: center;
     position: fixed;
     top: 0;
+    z-index: 10;
 }
 .logo{
     width: calc(100% / 3);
@@ -57,25 +58,46 @@ main .row{
     /* /debug */
 }
 .col{
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 10px);
     padding: .5em;
     /* debug */
-    min-height: 400px;
     background-color: aqua;
     border: 1px solid black;
     /* /debug */
 }
 .card{
     margin-top: 1em;
+    position: relative;
     /* debug */
-    height: 300px;
     background-color: violet;
     border: 1px solid black;
     /* /debug */
 }
+.first-img, .seconde-img{
+    display: block;
+}
+.first-img{
+    position:absolute;
+    top: 0;
+}
+.card:hover .first-img{
+    display: none;
+}
+.card .love{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 5;
+    color: white;
+}
+.love:hover{
+    color: red;
+}
 .card .ticket{
-    position: relative;
-    top: 250px;
+    position: absolute;
+    top: 90%;
+    color: white;
+    z-index: 5;
 }
 .ticket .discount{
     display: inline-block;
@@ -86,12 +108,15 @@ main .row{
     display: inline-block;
     background-color: green;
 }
-.info-card{
-    /* debug */
-    height: 100px;
-    background-color: red;
-    border: 1px solid black;
-    /* /debug */
+.info-card p.prix{
+    color: red;
+}
+.info-card p.marque{
+    color: grey;
+}
+.info-card p.prix span{
+    color: grey;
+    text-decoration:line-through;
 }
 /* /MAIN */
 /* FOOTER */
