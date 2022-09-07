@@ -4,9 +4,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+img{
+    width: 100%;
+}
 /* /RESET */
 
+/* COMMON */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* /COMMON */
+
 /* HEADER */
+header{
+    width: 100%;
+    background-color: orange;
+    color: white;
+    position: fixed;
+    text-align: center;
+}
+.logo{
+    width: calc(100% / 3);
+}
+.logo img{
+    width: 200px;
+    line-height: 30px;
+}
+.div-header a{
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em;
+    line-height: 30px;
+    color: white;
+}
+.categories{
+    line-height: 30px;
+}
 /* /HEADER */
 /* MAIN */
 /* /MAIN */
